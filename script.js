@@ -1,22 +1,99 @@
-// DPBOSS Telegram Landing Page
+// ======================================
+// DPBOSS TELEGRAM + META PIXEL TRACKING
+// ======================================
 
-const TELEGRAM_URL = "https://t.me/+PaxsCR3InwE2ZjFl";
+// Your Telegram channel
+const TELEGRAM_URL =
+  "https://t.me/+PaxsCR3InwE2ZjFl";
 
-const joinBtn = document.getElementById("joinBtn");
-const toast = document.getElementById("toast");
 
-joinBtn.href = TELEGRAM_URL;
+// Get button
+const joinBtn =
+  document.getElementById("joinBtn");
 
-joinBtn.addEventListener("click", function () {
-  // Track the important Telegram CTA click as a Meta Pixel Lead event.
-  if (typeof fbq === "function") {
-    fbq("track", "Lead");
-  }
 
-  toast.textContent = "Telegram open ho raha hai…";
-  toast.classList.add("show");
+// Get toast
+const toast =
+  document.getElementById("toast");
 
-  setTimeout(() => {
-    toast.classList.remove("show");
-  }, 1600);
-});
+
+// Make sure button exists
+if (joinBtn) {
+
+  joinBtn.addEventListener(
+    "click",
+    function () {
+
+      /*
+       * IMPORTANT:
+       *
+       * This Lead event means:
+       * "User clicked Join Telegram"
+       *
+       * It DOES NOT mean:
+       * "User actually joined Telegram"
+       */
+
+      if (
+        typeof window.fbq === "function"
+      ) {
+
+        // Send Lead event to Meta Pixel
+        window.fbq(
+          "track",
+          "Lead"
+        );
+
+        // Also send a custom event
+        // useful for debugging/analysis
+        window.fbq(
+          "trackCustom",
+          "TelegramButtonClick"
+        );
+
+        console.log(
+          "Meta Pixel: Lead event sent"
+        );
+
+      } else {
+
+        console.error(
+          "Meta Pixel is NOT loaded."
+        );
+
+      }
+
+
+      // Small visual confirmation
+      if (toast) {
+
+        toast.classList.add(
+          "show"
+        );
+
+        setTimeout(
+          function () {
+
+            toast.classList.remove(
+              "show"
+            );
+
+          },
+          1500
+        );
+
+      }
+
+      /*
+       * IMPORTANT:
+       *
+       * We DON'T manually redirect here.
+       *
+       * The <a href="..."> already
+       * opens the Telegram URL.
+       */
+
+    }
+  );
+
+}
