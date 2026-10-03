@@ -1,38 +1,27 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <title>DPBOSS | Join Telegram</title>
+  <meta name="description" content="Join the DPBOSS Telegram Channel for daily number updates and latest information.">
 
-  <meta name="theme-color" content="#ffc98f">
-
-  <title>DPBOSS — Join Telegram</title>
-
-  <!-- =========================
-       META PIXEL
-       ========================= -->
+  <!-- ==================================================
+       META PIXEL CODE
+       SAME AS BEFORE — DO NOT CHANGE
+  =================================================== -->
   <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;
-  n.push=n;
-  n.loaded=!0;
-  n.version='2.0';
-  n.queue=[];
-  t=b.createElement(e);
-  t.async=!0;
-  t.src=v;
-  s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}
-  (window, document, 'script',
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
 
   fbq('init', '4601142823504642');
-
-  // Page visit
   fbq('track', 'PageView');
   </script>
 
@@ -44,195 +33,738 @@
       src="https://www.facebook.com/tr?id=4601142823504642&ev=PageView&noscript=1"
     />
   </noscript>
-  <!-- END META PIXEL -->
+  <!-- End Meta Pixel Code -->
 
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+Devanagari:wght@500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <link rel="stylesheet" href="styles.css">
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+
+      background:
+        linear-gradient(
+          135deg,
+          #ffd8b5 0%,
+          #ffc59c 48%,
+          #ffb98d 100%
+        );
+
+      color: #111d4a;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+    /* ==============================
+       MAIN
+    ============================== */
+
+    .page {
+      width: 100%;
+      min-height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 20px 15px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 540px;
+      text-align: center;
+    }
+
+
+    /* ==============================
+       BRAND
+    ============================== */
+
+    .brand {
+      margin-bottom: 10px;
+    }
+
+    .brand-main {
+      font-size: clamp(42px, 12vw, 72px);
+      font-weight: 1000;
+      line-height: 0.9;
+      letter-spacing: -3px;
+
+      color: #f51d68;
+
+      text-shadow:
+        3px 3px 0 #111d4a;
+    }
+
+    .brand-sub {
+      display: inline-block;
+
+      margin-top: 12px;
+
+      padding: 7px 17px;
+
+      border-radius: 50px;
+
+      background: #111d4a;
+      color: #ffffff;
+
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+
+    /* ==============================
+       HERO
+    ============================== */
+
+    .hero {
+      margin-top: 28px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 8vw, 44px);
+      line-height: 1.05;
+      font-weight: 1000;
+      color: #111d4a;
+    }
+
+    .hero h1 span {
+      color: #f51d68;
+    }
+
+    .hero-text {
+      margin: 17px auto 0;
+
+      max-width: 470px;
+
+      font-size: 16px;
+      line-height: 1.55;
+      font-weight: 600;
+
+      color: #28335b;
+    }
+
+
+    /* ==============================
+       TELEGRAM CARD
+    ============================== */
+
+    .telegram-card {
+      margin-top: 24px;
+
+      background: #ffffff;
+
+      border-radius: 25px;
+
+      padding: 23px 18px 20px;
+
+      box-shadow:
+        0 15px 40px rgba(17, 29, 74, 0.16);
+
+      border: 3px solid #111d4a;
+    }
+
+    .telegram-icon {
+      width: 62px;
+      height: 62px;
+
+      margin: 0 auto 13px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background: #229ed9;
+
+      font-size: 30px;
+
+      box-shadow:
+        0 8px 18px rgba(34, 158, 217, 0.30);
+    }
+
+    .telegram-card h2 {
+      font-size: 24px;
+      font-weight: 1000;
+
+      color: #111d4a;
+    }
+
+    .telegram-card p {
+      margin-top: 7px;
+
+      font-size: 13px;
+      line-height: 1.45;
+
+      color: #555d78;
+      font-weight: 600;
+    }
+
+
+    /* ==============================
+       JOIN BUTTON
+    ============================== */
+
+    .join-btn {
+      width: 100%;
+
+      margin-top: 17px;
+
+      min-height: 58px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+
+      border-radius: 15px;
+
+      background: #229ed9;
+      color: #ffffff;
+
+      font-size: 18px;
+      font-weight: 1000;
+
+      box-shadow:
+        0 8px 0 #1475a4,
+        0 13px 25px rgba(34, 158, 217, 0.30);
+
+      transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+    }
+
+    .join-btn:hover {
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 10px 0 #1475a4,
+        0 17px 30px rgba(34, 158, 217, 0.35);
+    }
+
+    .join-btn:active {
+      transform: translateY(5px);
+
+      box-shadow:
+        0 3px 0 #1475a4,
+        0 7px 15px rgba(34, 158, 217, 0.25);
+    }
+
+    .arrow {
+      font-size: 25px;
+      line-height: 1;
+    }
+
+
+    /* ==============================
+       TRUST
+    ============================== */
+
+    .trust {
+      margin-top: 13px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+
+      font-size: 11px;
+      font-weight: 700;
+
+      color: #69708b;
+    }
+
+    .trust-dot {
+      width: 7px;
+      height: 7px;
+
+      border-radius: 50%;
+
+      background: #20b56b;
+    }
+
+
+    /* ==============================
+       FEATURES
+       NOW BELOW TELEGRAM SECTION
+    ============================== */
+
+    .features {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 10px;
+
+      margin-top: 18px;
+    }
+
+    .feature {
+      background: rgba(255, 255, 255, 0.65);
+
+      border: 2px solid rgba(17, 29, 74, 0.10);
+
+      border-radius: 16px;
+
+      padding: 14px 7px;
+
+      box-shadow:
+        0 7px 20px rgba(17, 29, 74, 0.08);
+    }
+
+    .feature-icon {
+      font-size: 24px;
+      margin-bottom: 6px;
+    }
+
+    .feature-title {
+      font-size: 12px;
+      font-weight: 900;
+      color: #111d4a;
+    }
+
+    .feature-text {
+      margin-top: 4px;
+
+      font-size: 10px;
+      line-height: 1.3;
+
+      color: #4b5270;
+      font-weight: 600;
+    }
+
+
+    /* ==============================
+       FOOTER
+    ============================== */
+
+    .footer {
+      margin-top: 18px;
+
+      font-size: 10px;
+      line-height: 1.4;
+
+      color: #636a82;
+
+      font-weight: 600;
+    }
+
+
+    /* ==============================
+       TOAST
+    ============================== */
+
+    .toast {
+      position: fixed;
+
+      left: 50%;
+      bottom: 20px;
+
+      transform:
+        translate(-50%, 120px);
+
+      background: #111d4a;
+      color: #ffffff;
+
+      padding: 11px 18px;
+
+      border-radius: 50px;
+
+      font-size: 12px;
+      font-weight: 800;
+
+      opacity: 0;
+
+      transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+
+      pointer-events: none;
+
+      z-index: 999;
+    }
+
+    .toast.show {
+      transform:
+        translate(-50%, 0);
+
+      opacity: 1;
+    }
+
+
+    /* ==============================
+       DESKTOP
+    ============================== */
+
+    @media (min-width: 600px) {
+
+      .page {
+        padding: 35px 20px;
+      }
+
+      .container {
+        max-width: 580px;
+      }
+
+      .hero {
+        margin-top: 35px;
+      }
+
+      .features {
+        gap: 14px;
+      }
+
+      .feature {
+        padding: 17px 10px;
+      }
+
+      .telegram-card {
+        padding: 28px 25px 24px;
+      }
+
+    }
+
+
+    /* ==============================
+       SMALL MOBILE
+    ============================== */
+
+    @media (max-width: 360px) {
+
+      .page {
+        padding: 15px 11px;
+      }
+
+      .brand-main {
+        font-size: 40px;
+      }
+
+      .hero h1 {
+        font-size: 27px;
+      }
+
+      .hero-text {
+        font-size: 14px;
+      }
+
+      .features {
+        gap: 6px;
+      }
+
+      .feature {
+        padding: 11px 5px;
+      }
+
+      .feature-icon {
+        font-size: 21px;
+      }
+
+      .feature-title {
+        font-size: 10px;
+      }
+
+      .telegram-card {
+        padding: 19px 13px 17px;
+      }
+
+      .telegram-card h2 {
+        font-size: 21px;
+      }
+
+      .join-btn {
+        min-height: 54px;
+        font-size: 16px;
+      }
+
+    }
+
+  </style>
 </head>
 
 
 <body>
 
-<main class="page">
+  <main class="page">
 
-  <section class="hero">
+    <div class="container">
 
-    <!-- BRAND -->
-    <header class="brand">
 
-      <div class="brand-mark">
-        Dp
+      <!-- ==========================
+           BRAND
+      =========================== -->
+
+      <div class="brand">
+
+        <div class="brand-main">
+          DPBOSS
+        </div>
+
+        <div class="brand-sub">
+          Official Telegram Channel
+        </div>
+
       </div>
 
-      <div class="brand-name">
-        BOS<span>SX</span><b>.NET</b>
-      </div>
 
-    </header>
+      <!-- ==========================
+           HERO
+      =========================== -->
 
+      <section class="hero">
 
-    <!-- NOTICE -->
-    <div class="notice">
-      <span class="notice-dot"></span>
+        <h1>
+          Daily Updates
+          <span>Directly</span>
+          On Telegram
+        </h1>
 
-      DPBOSS.net अब
-      <strong>dpbossx.net</strong>
-      है
-    </div>
+        <p class="hero-text">
+          Get daily number updates and the latest information
+          in one place. Stay connected with DPBOSS on Telegram
+          and don't miss important updates.
+        </p>
 
-
-    <!-- HEADLINE -->
-    <div class="headline-wrap">
-
-      <p class="eyebrow">
-        🔥 Daily Updates • Fast Alerts • Live Results
-      </p>
-
-      <h1>
-        DPBOSS Telegram
-        <br>
-
-        <span>
-          Official Updates Channel
-        </span>
-      </h1>
-
-      <p class="subhead">
-
-        Aaj ke number insights,
-        Kalyan updates aur live result alerts —
-
-        <strong>
-          sabse pehle Telegram par.
-        </strong>
-
-      </p>
-
-    </div>
+      </section>
 
 
-    <!-- TELEGRAM CTA -->
-    <div class="cta-card">
+      <!-- ==========================
+           TELEGRAM CTA
+           SAME TELEGRAM LINK
+      =========================== -->
 
-      <div class="telegram-badge">
+      <section class="telegram-card">
 
-        <svg
-          viewBox="0 0 24 24"
-          aria-hidden="true"
+        <div class="telegram-icon">
+          ✈️
+        </div>
+
+        <h2>
+          Join DPBOSS Telegram
+        </h2>
+
+        <p>
+          Join our Telegram Channel and get daily
+          updates directly on your phone.
+        </p>
+
+
+        <!-- SAME TELEGRAM LINK -->
+
+        <a
+          id="joinBtn"
+          class="join-btn"
+          href="https://t.me/+PaxsCR3InwE2ZjFl"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <path d="M21.5 3.8 18.3 20c-.24 1.15-.9 1.43-1.82.9l-5.05-3.72-2.44 2.35c-.27.27-.5.5-1.03.5l.37-5.14 9.36-8.45c.41-.36-.09-.56-.64-.2L5.47 13.56.48 12c-1.09-.34-1.11-1.09.23-1.61L20.2 2.8c.92-.34 1.73.22 1.3 1Z"/>
-        </svg>
 
+          <span>
+            Join Telegram
+          </span>
+
+          <span class="arrow">
+            →
+          </span>
+
+        </a>
+
+
+        <div class="trust">
+
+          <span class="trust-dot"></span>
+
+          <span>
+            Click above to join the Telegram Channel
+          </span>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==========================
+           FEATURES
+           MOVED BELOW BUTTON
+      =========================== -->
+
+      <section class="features">
+
+        <div class="feature">
+
+          <div class="feature-icon">
+            📢
+          </div>
+
+          <div class="feature-title">
+            Daily Updates
+          </div>
+
+          <div class="feature-text">
+            Regular updates directly on Telegram.
+          </div>
+
+        </div>
+
+
+        <div class="feature">
+
+          <div class="feature-icon">
+            ⚡
+          </div>
+
+          <div class="feature-title">
+            Fast Access
+          </div>
+
+          <div class="feature-text">
+            Easy access whenever you need updates.
+          </div>
+
+        </div>
+
+
+        <div class="feature">
+
+          <div class="feature-icon">
+            🔔
+          </div>
+
+          <div class="feature-title">
+            Stay Updated
+          </div>
+
+          <div class="feature-text">
+            Stay connected with the latest information.
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==========================
+           FOOTER
+      =========================== -->
+
+      <div class="footer">
+        DPBOSS • Stay connected for latest updates
       </div>
 
-
-      <div class="cta-copy">
-
-        <span class="mini">
-          FREE TELEGRAM COMMUNITY
-        </span>
-
-        <strong>
-          Telegram Channel Join Karo
-        </strong>
-
-        <small>
-          Daily updates • No registration • One-tap access
-        </small>
-
-      </div>
-
-
-      <!-- IMPORTANT TELEGRAM BUTTON -->
-      <a
-        id="joinBtn"
-        class="join-btn"
-        href="https://t.me/+PaxsCR3InwE2ZjFl"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-
-        <span>
-          Join Telegram
-        </span>
-
-        <span class="arrow">
-          →
-        </span>
-
-      </a>
 
     </div>
 
-
-    <!-- FEATURES -->
-    <div class="trust-row">
-
-      <div>
-        <b>01</b>
-        <span>
-          Daily<br>
-          Updates
-        </span>
-      </div>
-
-      <i></i>
-
-      <div>
-        <b>⚡</b>
-        <span>
-          Fast<br>
-          Alerts
-        </span>
-      </div>
-
-      <i></i>
-
-      <div>
-        <b>📲</b>
-        <span>
-          Telegram<br>
-          Only
-        </span>
-      </div>
-
-    </div>
+  </main>
 
 
-    <!-- DISCLAIMER -->
-    <p class="disclaimer">
+  <!-- TOAST -->
 
-      Entertainment & information purpose only.
-      No result is guaranteed.
-      Please follow local laws and play responsibly.
-
-    </p>
-
-  </section>
-
-</main>
+  <div
+    id="toast"
+    class="toast"
+  >
+    Opening Telegram...
+  </div>
 
 
-<!-- Small status message -->
-<div
-  id="toast"
-  class="toast"
->
-  Telegram open ho raha hai…
-</div>
+  <!-- ==============================
+       JAVASCRIPT
+       SAME META PIXEL
+       LEAD TRACKING
+  =============================== -->
+
+  <script>
+
+    const joinBtn =
+      document.getElementById("joinBtn");
+
+    const toast =
+      document.getElementById("toast");
+
+    let leadSent = false;
 
 
-<!-- YOUR JS -->
-<script src="script.js"></script>
+    if (joinBtn) {
+
+      joinBtn.addEventListener(
+        "click",
+        function () {
+
+
+          /* ==========================
+             META LEAD EVENT
+          =========================== */
+
+          if (!leadSent) {
+
+            leadSent = true;
+
+            if (
+              typeof window.fbq === "function"
+            ) {
+
+              window.fbq(
+                "track",
+                "Lead"
+              );
+
+              console.log(
+                "Meta Pixel: Lead event sent once"
+              );
+
+            } else {
+
+              console.error(
+                "Meta Pixel is not loaded"
+              );
+
+            }
+
+          }
+
+
+          /* ==========================
+             TOAST
+          =========================== */
+
+          if (toast) {
+
+            toast.classList.add("show");
+
+            setTimeout(
+              function () {
+
+                toast.classList.remove("show");
+
+              },
+              1500
+            );
+
+          }
+
+        }
+      );
+
+    }
+
+  </script>
 
 </body>
 </html>
