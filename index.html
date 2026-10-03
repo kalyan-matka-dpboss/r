@@ -11,46 +11,62 @@
     content="Join the DPBOSS Telegram Channel for daily number updates and latest information."
   >
 
-
   <!-- ==================================================
-       META PIXEL 1
-       Existing Pixel: 4601142823504642
-  =================================================== -->
+       META PIXEL CODE
+       PIXEL 1: 4601142823504642
+       PIXEL 2: 1691783049318782
+  ================================================== -->
 
   <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
+    !function(f,b,e,v,n,t,s)
+    {
+      if(f.fbq)return;
 
-  fbq('init', '4601142823504642');
+      n=f.fbq=function(){
+        n.callMethod ?
+        n.callMethod.apply(n,arguments) :
+        n.queue.push(arguments)
+      };
+
+      if(!f._fbq)f._fbq=n;
+
+      n.push=n;
+      n.loaded=!0;
+      n.version='2.0';
+      n.queue=[];
+
+      t=b.createElement(e);
+      t.async=!0;
+      t.src=v;
+
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s);
+
+    }(
+      window,
+      document,
+      'script',
+      'https://connect.facebook.net/en_US/fbevents.js'
+    );
 
 
-  <!-- ==================================================
-       META PIXEL 2
-       New Pixel: 1691783049318782
-  =================================================== -->
-
-  fbq('init', '1691783049318782');
+    // Pixel 1
+    fbq('init', '4601142823504642');
 
 
-  <!-- ==================================================
-       PAGE VIEW
-       Both pixels receive PageView
-  =================================================== -->
+    // Pixel 2
+    fbq('init', '1691783049318782');
 
-  fbq('track', 'PageView');
+
+    // PageView for both pixels
+    fbq('track', 'PageView');
 
   </script>
 
 
   <!-- ==================================================
-       NOSCRIPT PIXEL
-  =================================================== -->
+       NOSCRIPT
+  ================================================== -->
 
   <noscript>
 
@@ -71,11 +87,6 @@
   </noscript>
 
 
-  <!-- ==================================================
-       END META PIXEL CODE
-  =================================================== -->
-
-
   <style>
 
     /* ==================================================
@@ -93,10 +104,7 @@
     }
 
     body {
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
 
       background:
         linear-gradient(
@@ -124,13 +132,10 @@
 
     .page {
       width: 100%;
-
       min-height: 100vh;
 
       display: flex;
-
       justify-content: center;
-
       align-items: center;
 
       padding: 20px 15px;
@@ -138,7 +143,6 @@
 
     .container {
       width: 100%;
-
       max-width: 540px;
 
       text-align: center;
@@ -249,7 +253,6 @@
 
     .telegram-icon {
       width: 62px;
-
       height: 62px;
 
       margin: 0 auto 13px;
@@ -257,7 +260,6 @@
       display: flex;
 
       align-items: center;
-
       justify-content: center;
 
       border-radius: 50%;
@@ -305,7 +307,6 @@
       display: flex;
 
       align-items: center;
-
       justify-content: center;
 
       gap: 13px;
@@ -347,7 +348,6 @@
 
     .arrow {
       font-size: 25px;
-
       line-height: 1;
     }
 
@@ -362,7 +362,6 @@
       display: flex;
 
       justify-content: center;
-
       align-items: center;
 
       gap: 6px;
@@ -376,7 +375,6 @@
 
     .trust-dot {
       width: 7px;
-
       height: 7px;
 
       border-radius: 50%;
@@ -469,7 +467,6 @@
       position: fixed;
 
       left: 50%;
-
       bottom: 20px;
 
       transform:
@@ -587,7 +584,6 @@
 
       .join-btn {
         min-height: 54px;
-
         font-size: 16px;
       }
 
@@ -667,10 +663,7 @@
         </p>
 
 
-        <!-- ==================================================
-             TELEGRAM LINK
-             SAME LINK
-        ================================================== -->
+        <!-- SAME TELEGRAM LINK -->
 
         <a
           id="joinBtn"
@@ -707,7 +700,6 @@
 
       <!-- ==================================================
            FEATURES
-           BELOW TELEGRAM BUTTON
       ================================================== -->
 
       <section class="features">
@@ -796,7 +788,6 @@
 
 
   <!-- ==================================================
-       JAVASCRIPT
        LEAD TRACKING
   ================================================== -->
 
@@ -809,11 +800,8 @@
       document.getElementById("toast");
 
 
-    /*
-      Prevent multiple Lead events
-      from repeated clicks during
-      the same page session.
-    */
+    // Prevent duplicate Lead events
+    // from repeated clicks in this page session.
 
     let leadSent = false;
 
@@ -825,9 +813,7 @@
         function () {
 
 
-          /* ==========================
-             META LEAD EVENT
-          =========================== */
+          // Send Lead only once
 
           if (!leadSent) {
 
@@ -843,8 +829,9 @@
                 "Lead"
               );
 
+
               console.log(
-                "Meta Pixel: Lead event sent once"
+                "Meta Pixel: Lead event sent"
               );
 
             } else {
@@ -858,9 +845,7 @@
           }
 
 
-          /* ==========================
-             TOAST MESSAGE
-          =========================== */
+          // Show toast
 
           if (toast) {
 
